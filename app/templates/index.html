@@ -1,9 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Multiplier</title>
-</head>
-<body>
-    
-</body>
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="question_label">
+        <p>Type in the answer to the following question, please:</p>
+        <p>{{ question }}</p>
+    </div>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p id="question">
+            {{ form.answer.label }}<br>
+            {{ form.answer(size=3) }}
+        </p>
+        <p>{{  form.submit() }}</p>
+    </form>
+{% endblock %}

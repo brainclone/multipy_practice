@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="grade_label">
+        <p>{{ grade }}</p>
+    </div>
+    <form action="/index">
+        <input type="submit" value={{ button_text }} />
+    </form>
+{% endblock %}

@@ -2,6 +2,7 @@ venv/
 .eric6project/
 .ropeproject/
 .directory/
+tags
 *.pyc
 *.pyo
 *.orig
